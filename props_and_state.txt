@@ -1,0 +1,28 @@
+props --> refers to the properties being passed into a component
+in order for it to work correctly, similar to how a function receives 
+parameters : "from above " 
+
+A component receiving props is not allowed to modify those props.
+
+(they are immutable)
+
+Note : never change props inside a component because the props are sent 
+for a particular  property .
+Suppose you wrote a function which will receive a, b as integer and 
+add them . will you want to change a,b's value inside the function?
+definitely not ! 
+
+
+State--> values that are managed by the component , similar to 
+variables declared inside a function. Any time you have changing values 
+that should be saved /displayed , you'll likely be using state.
+ /**
+     * Note: if you ever need the old value of state
+     * to help you determine the new value of state,
+     * you should pass a callback function to your
+     * state setter function instead of using
+     * state directly. This callback function will
+     * receive the old value of state as its parameter,
+     * which you can then use to determine your new
+     * value of state.
+     */
